@@ -29,12 +29,12 @@ pipeline {
             }
         }
 
-        // stage('Deploy') {
-        //     steps {
-        //         echo 'Deploying...'
-        //         sh 'echo "Deployment script goes here"'
-        //     }
-        // }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                sh 'echo "Deployment script goes here"'
+            }
+        }
         
     }
 
