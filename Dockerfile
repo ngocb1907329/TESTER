@@ -1,5 +1,5 @@
 FROM node:latest
-WORKDIR /app
+WORKDIR /apps
 COPY . /apps
 RUN npm install && npm run build
 EXPOSE 3000
