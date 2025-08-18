@@ -29,10 +29,11 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Docker Build') {
             steps {
-                echo 'Deploying...'
-                sh 'echo "Deployment script goes here"'
+                // echo 'Deploying...'
+                // sh 'echo "Deployment script goes here"'
+                sh 'docker build -t my-node-app:1.0 .'
             }
         }
         
